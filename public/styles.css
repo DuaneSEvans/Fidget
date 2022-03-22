@@ -37,11 +37,91 @@ a:hover {
   transition-duration: 0.5s;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar-button {
+
+
+  /* Style the navigation menu */
+  .topnav {
+    background-color: #333;
+    display: flex;
   }
 
-  .navbar-button:hover {
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: none;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    display: none;
+    color: white;
+  }
+  .logo {
+ }
+
+@media screen and (max-width: 768px) {
+
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+.logo {
+   display: none;
+}
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
   }
 }
 
@@ -283,4 +363,44 @@ a:hover {
     max-width: 90%;
     height: auto;
   }
+}
+
+.consultation-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    transition: opacity 0.8s, left ease 0.5s;
+}
+/* tbd copied from listen button
+  padding: 1rem;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  
+  
+  left: 0;
+  
+}
+*/
+
+.consultation-button:hover {
+  opacity: 1;
+  left: 10px;
+}
+
+
+.consultation-wrap {
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
 }
