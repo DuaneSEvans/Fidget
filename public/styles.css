@@ -25,29 +25,66 @@ a:hover {
 }
 
 /* Navbar */
-.navbar-button {
-  display: block;
-  position: relative;
+.navbar {
+  display: flex;
+  background-color: #08395e;
+  position: fixed;
   top: 0;
-  transition-duration: 0.5s;
+  width: 100%;
+  z-index: 1;
 }
 
-.navbar-button:hover {
-  padding-top: 0.5rem;
-  transition-duration: 0.5s;
+.topnav {
+  background-color: #08395e;
+}
+
+.topnav a {
+  color: #eae3d6;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: contents;
+}
+
+.bottomnav a {
+  color: #eae3d6;
+  padding: 2rem;
+  text-decoration: none;
+  font-size: 17px;
+  flex-direction: row;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: none;
+}
+
+.bottom #nav-links a:hover {
+  background-color: #eae3d6;
+  color: #08395e;
+}
+
+.bottomnav #nav-links {
+  display: contents;
 }
 
 /* Style the active link (or home/logo) */
-.active {
-  background-color: #04aa6d;
-  display: none;
-  color: white;
+.logo-container {
+  background-color: #08395e;
+  color: #eae3d6;
 }
+
 .logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
-  /* Style the navigation menu */
+  .navbar {
+    display: contents;
+  }
+
   .topnav {
     overflow: hidden;
     background-color: #08395e;
@@ -91,7 +128,6 @@ a:hover {
     align-items: center;
   }
 
-  /* Add a grey background color on mouse-over */
   .bottom #nav-links a:hover {
     background-color: #eae3d6;
     color: #08395e;
