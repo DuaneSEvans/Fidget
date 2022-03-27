@@ -19,21 +19,37 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function nav() {
+            var navLinks = document.getElementById("nav-links");
+
+            if (navLinks.style.display === "block") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "block";
+            }
+            }
+        </script>
         <!-- Top Navigation Menu -->
         <div class="topnav">
-        <a href="#home" class="active">Logo</a>
+            <a href="./index.html" class="active">
+                <img src="/public/favicon.png" class="logo">
+            </a>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="nav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="#index" class="logo">Logo</a>
-            <a href="#news">News</a>
-            <a href="/pages/coaching.html">Coaching</a>
-            <a href="#about">About</a>
+        <div class="bottomnav">
+            <div id="nav-links">
+                <a href="/pages/workshops.html">Workshops</a>
+                <a href="/pages/coaching.html">Coaching</a>
+                <a href="/pages/testimonials.html">Testimonials</a>
+            </div>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        </div>
+        
   
         <!-- <nav class="flex justify-between py-4 bg-slate-400">
             <div class="flex align-content-center px-4">

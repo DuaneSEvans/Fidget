@@ -37,66 +37,47 @@ a:hover {
   transition-duration: 0.5s;
 }
 
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04aa6d;
+  display: none;
+  color: white;
+}
+.logo {
+}
 
-
+@media screen and (max-width: 768px) {
   /* Style the navigation menu */
   .topnav {
-    background-color: #333;
-    display: flex;
-  }
-
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
+    overflow: hidden;
+    background-color: #08395e;
     display: flex;
     justify-content: space-between;
   }
 
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    display: none;
-  }
-
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #04AA6D;
-    display: none;
-    color: white;
-  }
-  .logo {
- }
-
-@media screen and (max-width: 768px) {
-
-  /* Style the navigation menu */
-  .topnav {
+  .bottomnav {
     overflow: hidden;
     background-color: #333;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
   }
-.logo {
-   display: none;
-}
+
   /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
+  .bottomnav #nav-links {
     display: none;
   }
 
   /* Style navigation menu links */
   .topnav a {
-    color: white;
+    color: #eae3d6;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .bottomnav a {
+    color: #eae3d6;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -106,22 +87,26 @@ a:hover {
   /* Style the hamburger menu */
   .topnav a.icon {
     background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+    display: flex;
+    align-items: center;
   }
 
   /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  .bottom #nav-links a:hover {
+    background-color: #eae3d6;
+    color: #08395e;
   }
 
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #08395e;
+    color: #eae3d6;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
   }
 }
 
@@ -373,22 +358,20 @@ a:hover {
 }
 
 .consultation-button {
-    background-color: #4DABCE; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    box-shadow:
-        inset 0 0 2px 0 rgba(255,255,255,.4),
-        inset 0 0 3px 0 rgba(0,0,0,.4),
-        inset 0 0 3px 5px rgba(0,0,0,.05),
-        2px 2px 4px 0 rgba(0,0,0,.25);
-    border-radius: 4px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: relative;
-    transition: opacity 0.8s, left ease 0.5s;
+  background-color: #4dabce; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  box-shadow: inset 0 0 2px 0 rgba(255, 255, 255, 0.4),
+    inset 0 0 3px 0 rgba(0, 0, 0, 0.4), inset 0 0 3px 5px rgba(0, 0, 0, 0.05),
+    2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  transition: opacity 0.8s, left ease 0.5s;
 }
 /* tbd copied from listen button
   padding: 1rem;
@@ -405,9 +388,8 @@ a:hover {
 .consultation-button:hover {
   opacity: 1;
   color: white;
-  text-decoration: underline;  
+  text-decoration: underline;
 }
-
 
 .consultation-wrap {
   border: none;
@@ -416,5 +398,4 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
 }
