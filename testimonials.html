@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Testimonials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://github.com/yujason93/yujason92.github.io/blob/main/favicon.png?raw=true"
+    />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function nav() {
+        var navLinks = document.getElementById("nav-links");
+
+        if (navLinks.style.display === "block") {
+          navLinks.style.display = "none";
+        } else {
+          navLinks.style.display = "block";
+        }
+      }
+    </script>
+    <nav class="navbar">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="./index.html" class="logo-container">
+          <img src="./favicon.png" class="logo" />
+        </a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="nav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- Navigation links (hidden by default) -->
+      <div class="bottomnav">
+        <div id="nav-links">
+          <a href="./workshops.html">Workshops</a>
+          <a href="./coaching.html">Coaching</a>
+          <a href="./testimonials.html">Testimonials</a>
+        </div>
+      </div>
+    </nav>
+    <main class="main-content-container">
+      <h1>Testimonials</h1>
+      <section class="description-section">
+        <div class="description-container">
+          <i>
+            <p>
+              I came into the class not sure what to expect, and came out with
+              some gems that I believe I will be using the rest of my life. Some
+              gems I will hold onto are the “parachute statement” that I can
+              share with others to more eloquently describe what my BFRB is, a
+              personal picking strategy goal, and the process model to help me
+              understand myself better. Jason’s clarity, content, and structure
+              were so well defined throughout the whole course.
+            </p>
+            <p>
+              With everything I had going on in life, taking this course did not
+              add more stress, but in contrast, helped me make it through life
+              stressors a little easier – knowing I was taking time for myself
+              and what was important to me. I never felt pressured to do more
+              than I was able, and what I did was good enough. Jason set
+              reasonable goals and homework assignments that were not so much a
+              chore, as something that I knew would improve my quality of life.
+              I wanted to do all the assignments! I thought the slides were
+              great, too. For some of the brainstorming slides, I really
+              appreciated him limiting our thinking to 2 to 3 minutes. It
+              prevented me from overthinking. It wasn’t overwhelming, and if I
+              can make time to do this course, anyone can!!
+            </p>
+            <p>
+              I also appreciated Jason’s vulnerability and thoughts throughout
+              the whole course material. I always felt that he never asked
+              anything of us that he wouldn’t expect of himself. Jason showed
+              how he really cared, remembered what we said, and would reflect it
+              back to us!
+            </p>
+          </i>
+          <p class="testimonial-source">Jo; 40; Wisconsin; Feb 2022</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

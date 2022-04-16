@@ -1,181 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <title>Fidget Podcast</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet"> 
-        <link href="public/styles.css" rel="stylesheet">
+  <head>
+    <title>Fidget Podcast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
 
-        <link rel="icon" type="image/png" href="https://github.com/yujason93/yujason92.github.io/blob/main/favicon.png?raw=true"/>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://github.com/yujason93/yujason92.github.io/blob/main/favicon.png?raw=true"
+    />
 
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <script>
-            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-            function nav() {
-            var navLinks = document.getElementById("nav-links");
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function nav() {
+        var navLinks = document.getElementById("nav-links");
 
-            if (navLinks.style.display === "block") {
-                navLinks.style.display = "none";
-            } else {
-                navLinks.style.display = "block";
-            }
-            }
-        </script>
-        <nav class="navbar">
-            <!-- Top Navigation Menu -->
-        <div class="topnav">
-            <a href="./index.html" class="logo-container">
-                <img src="/public/favicon.png" class="logo">
-            </a>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="nav()">
-                <i class="fa fa-bars"></i>
-            </a>
+        if (navLinks.style.display === "block") {
+          navLinks.style.display = "none";
+        } else {
+          navLinks.style.display = "block";
+        }
+      }
+    </script>
+    <nav class="navbar">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="./index.html" class="logo-container">
+          <img src="./favicon.png" class="logo" />
+        </a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="nav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- Navigation links (hidden by default) -->
+      <div class="bottomnav">
+        <div id="nav-links">
+          <a href="./workshops.html">Workshops</a>
+          <a href="./coaching.html">Coaching</a>
+          <a href="./testimonials.html">Testimonials</a>
         </div>
-        <!-- Navigation links (hidden by default) -->
-        <div class="bottomnav">
-            <div id="nav-links">
-                <a href="/pages/workshops.html">Workshops</a>
-                <a href="/pages/coaching.html">Coaching</a>
-                <a href="/pages/testimonials.html">Testimonials</a>
-            </div>
+      </div>
+    </nav>
+    <main class="main-content-container">
+      <section class="welcome-section">
+        <div class="fidget-image-container">
+          <img class="fidget-image" alt="Fidget Logo" src="./logo.JPG" />
         </div>
-        </nav>
-        
-  
-        <!-- <nav class="flex justify-between py-4 bg-slate-400">
-            <div class="flex align-content-center px-4">
-                <a href="./index.html" class="">
-                    <img src="/public/favicon.png" class="object-contain h-12 w-12">
-                </a>
-            </div>
-            <ul class="flex justify-around px-4 text-2xl hamburger">
-                <li class="px-4">
-                    <a class="navbar-button" href="/pages/workshops.html">Workshops</a>
-                </li>
-                <li class="px-4">
-                    <a class="navbar-button" href="/pages/coaching.html">Coaching</a>
-                </li>
-                <li class="px-4">
-                    <a class="navbar-button" href="/pages/testimonials.html">Testimonials</a>
-                </li>
-            </ul>
-        </nav>  -->
-        <main class="main-content-container">
-            <section class="welcome-section">
-                <div class="fidget-image-container">
-                    <img class="fidget-image" alt="Fidget Logo" src="public/logo.JPG">
-                </div>
-                <div class="listen-button-container">
-                    <a href="https://podcasts.apple.com/ca/podcast/fidget/id1540523010">
-                        <img alt="Listen on Apple Podcast" 
-                            src="buttons/apple_png.png"
-                            class ="button listen-button"
-                        >
-                        </a>      
-                    <a href="https://open.spotify.com/show/75DFMqluBGjBqxhTfLypKD">
-                        <img alt="Listen on Spotify" 
-                        src="buttons/spotify_png.png"
-                        class ="button listen-button"
-                        >
-                        </a>
-                    <a href="https://www.stitcher.com/show/fidget">
-                        <img alt="Listen on Stitcher" 
-                        src="buttons/stitcher_png.png"
-                        class ="button listen-button"
-                        >
-                    </a>
-                    <a href="https://castbox.fm/channel/id3530715?utm_campaign=web_amp_view_all&utm_medium=dlink&utm_source=web_amp&utm_content=cid_3530715&country=gb">
-                        <img alt="Listen on Castbox" 
-                        src="buttons/castbox_png.png"
-                        class ="button listen-button"
-                        >
-                        </a>
-                    <a href="https://www.buzzsprout.com/1758296">
-                        <img alt="Subscribe on RSS" 
-                        src="buttons/rss_png.png"
-                        class ="button listen-button"
-                        >
-                        </a>    
-                </div>
-            </section>
-            <section class="player-section">
-                <div class="audio-title-container">
-                    <h3>Trailer</h3>
-                </div>
-                <div class="audio-player-container">
-                    <audio controls>
-                        <source src="public/Fidget Trailer.mp3" type="audio/ogg" />
-                        <source src="public/Fidget Trailer.mp3" type="audio/mpeg" />
-                        <a href="public/Fidget Trailer.mp3">Fidget Trailer</a>
-                    </audio>
-                </div>
-            </section>
-            <section class="description-section">
-                <div class="description-container">
-                    <p> Sometimes fun, sometimes educational, <strong>Fidget</strong> is two friends 
-                        talking about Body Focused Repetitive Behaviours (BFRBs). 
-                        We are not professionals / BFRB experts. We just want to 
-                        share our lived experience in hopes of supporting those 
-                        affected by BFRBs: whether that’s you or someone close to you!
-                    </p>
-                    
-                </div>
-            </section>
-            <section class="episode-section">
-                <div class="audio-title-container">
-                    <h3>Latest Episode</h3>
-                </div>
-                <iframe src="https://open.spotify.com/embed/show/75DFMqluBGjBqxhTfLypKD" 
-                        id="episode"
-                        width="100%"   
-                        height="232" 
-                        frameborder="0" 
-                        allowtransparency="true" 
-                        allow="encrypted-media">
-                </iframe>
-            </section>
-            <section class="description-section">
-                <div class="description-container">
-                    <p>Questions? Requests? Ideas for the show? Email us at 
-                        fidgetpodcast@gmail.com.
-                    </p>
-                </div>
-            </section>
-            <section class="social-section">
-                <div class="social-container">
-                    <a href="https://www.instagram.com/fidgetpodcast/">
-                        <img alt="Go to Instagram" 
-                        src="buttons/instagram_png.png"
-                        class ="button social-button"
-                        >
-                    </a>
-                    <a href="mailto:fidgetpodcast@gmail.com">
-                        <img alt="Send email to fidget" 
-                        src="buttons/gmail_png.png"
-                        class ="button social-button"
-                        >
-                    </a>  
-                    <a href="https://www.patreon.com/fidgetpodcast">
-                        <img alt="Become a Patreon" 
-                        src="buttons/patreon_png.png"
-                        class ="button patreon-button"
-                        >
-                    </a>    
-                </div>
-            </section>
-        </main>         
-    </body>
-
-
+        <div class="listen-button-container">
+          <a href="https://podcasts.apple.com/ca/podcast/fidget/id1540523010">
+            <img
+              alt="Listen on Apple Podcast"
+              src="./buttons/apple_png.png"
+              class="button listen-button"
+            />
+          </a>
+          <a href="https://open.spotify.com/show/75DFMqluBGjBqxhTfLypKD">
+            <img
+              alt="Listen on Spotify"
+              src="./buttons/spotify_png.png"
+              class="button listen-button"
+            />
+          </a>
+          <a href="https://www.stitcher.com/show/fidget">
+            <img
+              alt="Listen on Stitcher"
+              src="./buttons/stitcher_png.png"
+              class="button listen-button"
+            />
+          </a>
+          <a
+            href="https://castbox.fm/channel/id3530715?utm_campaign=web_amp_view_all&utm_medium=dlink&utm_source=web_amp&utm_content=cid_3530715&country=gb"
+          >
+            <img
+              alt="Listen on Castbox"
+              src="./buttons/castbox_png.png"
+              class="button listen-button"
+            />
+          </a>
+          <a href="https://www.buzzsprout.com/1758296">
+            <img
+              alt="Subscribe on RSS"
+              src="./buttons/rss_png.png"
+              class="button listen-button"
+            />
+          </a>
+        </div>
+      </section>
+      <section class="player-section">
+        <div class="audio-title-container">
+          <h3>Trailer</h3>
+        </div>
+        <div class="audio-player-container">
+          <audio controls>
+            <source src="./Fidget Trailer.mp3" type="audio/ogg" />
+            <source src="./Fidget Trailer.mp3" type="audio/mpeg" />
+            <a href="./Fidget Trailer.mp3">Fidget Trailer</a>
+          </audio>
+        </div>
+      </section>
+      <section class="description-section">
+        <div class="description-container">
+          <p>
+            Sometimes fun, sometimes educational, <strong>Fidget</strong> is two
+            friends talking about Body Focused Repetitive Behaviours (BFRBs). We
+            are not professionals / BFRB experts. We just want to share our
+            lived experience in hopes of supporting those affected by BFRBs:
+            whether that’s you or someone close to you!
+          </p>
+        </div>
+      </section>
+      <section class="episode-section">
+        <div class="audio-title-container">
+          <h3>Latest Episode</h3>
+        </div>
+        <iframe
+          src="https://open.spotify.com/embed/show/75DFMqluBGjBqxhTfLypKD"
+          id="episode"
+          width="100%"
+          height="232"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        >
+        </iframe>
+      </section>
+      <section class="description-section">
+        <div class="description-container">
+          <p>
+            Questions? Requests? Ideas for the show? Email us at
+            fidgetpodcast@gmail.com.
+          </p>
+        </div>
+      </section>
+      <section class="social-section">
+        <div class="social-container">
+          <a href="https://www.instagram.com/fidgetpodcast/">
+            <img
+              alt="Go to Instagram"
+              src="./buttons/instagram_png.png"
+              class="button social-button"
+            />
+          </a>
+          <a href="mailto:fidgetpodcast@gmail.com">
+            <img
+              alt="Send email to fidget"
+              src="./buttons/gmail_png.png"
+              class="button social-button"
+            />
+          </a>
+          <a href="https://www.patreon.com/fidgetpodcast">
+            <img
+              alt="Become a Patreon"
+              src="./buttons/patreon_png.png"
+              class="button patreon-button"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
