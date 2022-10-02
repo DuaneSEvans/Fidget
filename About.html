@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://github.com/yujason93/yujason92.github.io/blob/main/favicon.png?raw=true"
+    />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function nav() {
+        var navLinks = document.getElementById("nav-links");
+
+        if (navLinks.style.display === "block") {
+          navLinks.style.display = "none";
+        } else {
+          navLinks.style.display = "block";
+        }
+      }
+    </script>
+    <nav class="navbar">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="./index.html" class="logo-container">
+          <img src="./favicon.png" class="logo" />
+        </a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="nav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- Navigation links (hidden by default) -->
+      <div class="bottomnav">
+        <div id="nav-links">
+          <a href="./Counselling.html">Counselling</a>
+          <a href="./Low-Fuel-Light.html">Low Fuel Light</a>
+          <a href="./About.html">About</a>
+        </div>
+      </div>
+    </nav>
+    <main class="main-content-container">
+      <h1>About</h1>
+      <section class="about-container">
+        <div class="fidget-image-container">
+          <img class="headshot-image" alt="Jason Headshot" src="./Headshot.jpg" />
+        </div>
+        <div class="description-container">
+            <p>
+              Hello!
+            </p>
+            <p>My name is Jason and I compulsively pick my skin. For 10 years, people would see my dry cracked hands, and ask me if I wanted any lotion. I always knew this bad little habit was eczema, but I was too ashamed to ask for help. It wasn’t until I learned the term BFRB (Body Focused Repetitive Behavior) did it all start to make sense. I soon realized my BFRB was damaging so much more than just my hands. 
+            </p>
+            <p>
+              So at 27, I quit my job as a civil engineer to learn as much about BFRBs as I could. Since then, I’ve made some amazing friends, recorded some embarrassing videos, and started living the life I always wanted, but could have never imagined under the weight of my BFRB.
+            </p>
+            <p>
+              If you’ve ever bled on an exam paper, spent hours of your life 1 inch from the mirror, or were too embarrassed to go swimming, I get it. And if you want to talk about it (or hear other people talk about it), I’m here. 
+            </p>
+            <p>
+              You can contact me at fidgetpodcast@gmail.com.
+            </p>
+        </div>
+      </section>
+      <section class="social-section">
+        <div class="social-container">
+          <a href="https://www.instagram.com/fidgetpodcast/">
+            <img
+              alt="Go to Instagram"
+              src="./buttons/instagram_png.png"
+              class="button social-button"
+            />
+          </a>
+          <a href="mailto:fidgetpodcast@gmail.com">
+            <img
+              alt="Send email to fidget"
+              src="./buttons/gmail_png.png"
+              class="button social-button"
+            />
+          </a>
+          <a href="https://www.patreon.com/fidgetpodcast">
+            <img
+              alt="Become a Patreon"
+              src="./buttons/patreon_png.png"
+              class="button patreon-button"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <main class="main-content-container">
+      <h1>Disclaimer</h1>
+      <section class="description-section">
+        <div class="description-container">
+            <p>
+              The Fidget podcast, website, videos, and any other material produced or shared is not therapy. It is not a replacement for therapy. Any advice followed from Fidget is done so at one’s own risk, and should always be discussed with a mental healthcare professional before doing so. Please seek therapy from a trained professional.             </p>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
