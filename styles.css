@@ -50,13 +50,18 @@ a:hover {
   flex-direction: row;
 }
 
+.bottomnav a:hover {
+  text-decoration: underline;
+}
+
 /* Style the hamburger menu */
 .topnav a.icon {
   display: none;
 }
 
+
 .bottom #nav-links a:hover {
-  background-color: #eae3d6;
+  background-color: #08395e;
   color: #08395e;
 }
 
@@ -73,7 +78,12 @@ a:hover {
 .logo {
   width: 40px;
   height: 40px;
+  opacity: 1;
   object-fit: cover;
+}
+
+.logo:hover {
+opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {
@@ -86,12 +96,14 @@ a:hover {
     background-color: #08395e;
     display: flex;
     justify-content: space-between;
+
   }
 
   .bottomnav {
     overflow: hidden;
     background-color: #333;
     display: flex;
+    position: fixed;
     justify-content: space-between;
   }
 
@@ -157,28 +169,67 @@ a:hover {
 
 .fidget-image {
   max-width: 500px;
+  border-radius: 20px;
   height: auto;
   width: auto;
   object-fit: contain;
 }
 
+.adele-image {
+  max-width: 500px;
+  border-radius: 25px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  padding: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.adelepostbutton {
+  font-size: 1.3rem;
+  background-color: var(--background-gray) !important;
+  font-family: "Roboto Slab", serif !important;
+  border: none;
+  text-decoration: underline dotted black;
+
+}
+
+
 .headshot-image {
   max-width: 300px;
+  border-radius: 25px;
   height: auto;
   width: auto;
   object-fit: contain;
   padding: 1rem;
 }
 
+.hand-image {
+  border-radius: 25px;
+  height: 350px;
+  width: auto;
+  object-fit: contain;
+  padding: 1rem;
+}
+
 .about-container {
-  /*background-color: pink;*/
   display: flex;
-  justify-content: center;
-  
+  justify-content: center; 
+}
+
+.caption-container {
+  display: flex;
+  justify-content: center; 
+  font-size: 1.0rem;
+  font-style:italic;
 }
 
 .laurel-image {
-  max-width: 150px;
+  max-width: 130px;
   display: inline-block;
   height: auto;
   width: auto;
@@ -215,6 +266,10 @@ a:hover {
   }
 
   .fidget-image {
+    max-width: 100%;
+  }
+  
+  .headshot-image {
     max-width: 100%;
   }
 
@@ -426,7 +481,7 @@ a:hover {
 }
 
 .consultation-button {
-  background-color: #4dabce; /* Green */
+  background-color: #4dabce; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -435,23 +490,14 @@ a:hover {
     2px 2px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   text-align: center;
+  width: 250px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   position: relative;
   transition: opacity 0.8s, left ease 0.5s;
 }
-/* tbd copied from listen button
-  padding: 1rem;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  
-  
-  left: 0;
-  
-}
-*/
+
 
 .consultation-button:hover {
   opacity: 1;
@@ -557,4 +603,29 @@ a:hover {
   padding: .2rem;
   /*border:1px solid black;*/
   max-height: 15rem;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #4dabce; /* Green */
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  box-shadow: inset 0 0 2px 0 rgba(255, 255, 255, 0.4),
+  inset 0 0 3px 0 rgba(0, 0, 0, 0.4), inset 0 0 3px 5px rgba(0, 0, 0, 0.05),
+  2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  opacity: 1;
+  color: white;
+  text-decoration: underline;
 }
