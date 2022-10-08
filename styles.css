@@ -54,6 +54,8 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 /* Style the hamburger menu */
 .topnav a.icon {
   display: none;
@@ -195,12 +197,20 @@ opacity: 0.6;
   font-family: "Roboto Slab", serif !important;
   border: none;
   text-decoration: underline dotted black;
+padding: 0rem;
+}
 
+.triggerwarning {
+  font-size: 1.1rem;
+  background-color: var(--background-gray) !important;
+  font-family: "Roboto Slab", serif !important;
+  text-decoration: underline dotted black;
 }
 
 
+
 .headshot-image {
-  max-width: 300px;
+  max-width: 250px;
   border-radius: 25px;
   height: auto;
   width: auto;
@@ -230,14 +240,22 @@ opacity: 0.6;
 
 .laurel-image {
   max-width: 130px;
+  position: relative;
   display: inline-block;
   height: auto;
   width: auto;
   object-fit: contain;
+  transition: opacity ease 0.8s top ease 0.5s;
+}
+
+.laurel-image:hover {
+  opacity: 0.6;
+  top: -10px;
 }
 
 .laurelitem {
-  padding: 2rem;
+  padding: .5rem 1.5rem;
+  
 }
 
 .laurel-section {
@@ -299,6 +317,22 @@ opacity: 0.6;
   opacity: 1;
   left: 10px;
 }
+
+.igicon {
+  
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  opacity: 0.6;
+  position: relative;
+  fill: #eae3d6;
+  left: 0;
+}
+
+.igicon:hover {
+fill: black;
+}
+
 
 @media screen and (max-width: 768px) {
   .listen-button-container {
